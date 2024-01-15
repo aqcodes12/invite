@@ -115,3 +115,23 @@ body {
   font-weight: 600;
   color: #3d3b40;
 }
+
+#countdown {
+  text-align: center;
+}
+
+#countdown p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+#timer {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+}
+#timer div {
+  padding: 0.5rem;
+}

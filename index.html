@@ -33,7 +33,7 @@
             <div class="wed-day">
               <p>FRI</p>
               <div class="mx-2">
-                <p>JAN 19</p>
+                <p>JAN 19th</p>
               </div>
               <p>2024</p>
             </div>
@@ -80,6 +80,14 @@
               <p>Smt Mamta & Shri Padam Mutha</p>
               <p>Smt Varsha & Shri Deepak Mutha</p>
             </div>
+
+            <div class="add-info my-5">
+              <div id="countdown">
+                <p>Event Countdown</p>
+                <div id="timer" class="d-flex justify-content-center"></div>
+              </div>
+            </div>
+
             <div class="h-last my-4">
               <p>With Best Compliment From</p>
               <p>Family, Relatives & Friends</p>
@@ -88,5 +96,31 @@
         </div>
       </div>
     </div>
+    <script>
+      // Set the date we're counting down to
+      const countDownDate = new Date("Jan 19, 2024 00:00:00").getTime();
+
+      // Update the countdown every 1 second
+      const x = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(
+          "timer"
+        ).innerHTML = `<div class="p-2">${days}d</div><div class="p-2">${hours}h</div><div class="p-2">${minutes}m</div><div class="p-2">${seconds}s</div>`;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
