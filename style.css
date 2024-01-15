@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --p-font: "Salsa", cursive, sans-serif;
+  --s-font: "Poppins", sans-serif;
+  --m-font: "Sacramento", cursive;
+  /* Font Sizes */
+  --base-font-size: 2.5em;
+  --small-font-size: 1.2em;
+  --medium-font-size: 1.5em;
+  --cus-font-size: 1.8em;
+
+  /* Text Colors */
+  --primary-text-color: #daa520;
+  /* --primary-text-color: #fff; */
+  --secondary-text-color: #49108b;
+  --comp-text-color: #f8f4ec;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+}
+
+.head {
+  font-family: var(--p-font);
+  color: var(--comp-text-color);
+  filter: drop-shadow(4px 4px 10px #302f2f);
+}
+
+.wed-anw p {
+  font-family: var(--m-font);
+  font-size: var(--base-font-size);
+  color: var(--secondary-text-color);
+}
+
+.wed-anw h2 {
+  font-family: var(--p-font);
+  font-size: var(--base-font-size);
+  color: var(--primary-text-color);
+  filter: drop-shadow(4px 4px 10px #ffffff);
+}
+
+.wed-anw h3 {
+  font-family: var(--p-font);
+  font-size: var(--cus-font-size);
+}
+
+.wed-day {
+  display: flex;
+  justify-content: center;
+}
+
+.wed-day p {
+  font-family: var(--s-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.venu p {
+  font-family: var(--s-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.s-names p {
+  font-family: var(--p-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+.h-main img {
+  height: 450px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.h-main h2 {
+  font-family: var(--p-font);
+  font-size: var(--base-font-size);
+  color: var(--primary-text-color);
+  filter: drop-shadow(4px 4px 10px #ffffff);
+}
+
+.h-main p {
+  font-family: var(--s-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.h-venu p {
+  font-family: var(--s-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.h-reg p {
+  font-family: var(--p-font);
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.h-last p {
+  font-family: var(--s-font);
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  color: #3d3b40;
+}
