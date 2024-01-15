@@ -171,6 +171,13 @@ body {
   font-size: var(--medium-font-size);
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .video-container img {
   height: 100px;
 }
