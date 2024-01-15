@@ -117,7 +117,10 @@ body {
 }
 
 #countdown {
+  display: grid;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #countdown p {
@@ -131,7 +134,24 @@ body {
   justify-content: center;
   color: var(--secondary-text-color);
   font-weight: 600;
+  background-color: #f8f4ec;
+  border-radius: 10px;
+  width: 250px;
 }
 #timer div {
   padding: 0.5rem;
+}
+
+.map-bt {
+  width: 120px;
+  height: 50px;
+  color: #fff !important;
+  font-weight: 600px !important;
+  border: 1px#fff solid !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
